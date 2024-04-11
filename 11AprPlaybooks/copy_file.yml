@@ -1,0 +1,11 @@
+---
+- name: My Test Playbook
+  hosts: all
+  become: true
+
+  tasks:
+  - name: copy index.html
+    copy:
+      src: index.html
+      dest: /home/ansadmin
+
